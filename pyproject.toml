@@ -1,0 +1,30 @@
+[project]
+name = "etl-aws"
+version = "0.1.0"
+description = "ETL on aws, using a API."
+authors = [
+    {name = "haison-ai",email = "hurrutiam@unal.edu.co"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv (>=0.9.9,<0.10.0)",
+    "boto3 (>=1.40.2,<2.0.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "pyspark (>=4.0.0,<5.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "pandas (>=2.3.1,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+mypy = "^1.17.1"
+
